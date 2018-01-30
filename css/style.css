@@ -162,7 +162,7 @@ p { font-size: 16px; color: #c0c0c0; font-family: "PT Serif", serif; font-style:
 
 .logo .col { padding: 20px; }
 
-.contact { min-height: 650px; background-image: url("../images/map.PNG"); background-size: cover; background-position: right bottom; padding: 80px; }
+.contact { min-height: 650px; background-image: url("../images/map.png"); background-size: cover; background-position: right bottom; padding: 80px; }
 
 .contact .row { margin: 50px 0 0; padding-bottom: 0; }
 
