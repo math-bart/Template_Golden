@@ -20,6 +20,7 @@ $color-google: #d95232;
 	padding: 0;
 	font-family: $fonts-main;
 	box-sizing: border-box;
+	outline: none;
 }
 
 h1 {
@@ -61,7 +62,7 @@ p {
 			color: $color-main;
 			display: block;
 			float: left;
-			font-size: 26px;
+			font-size: 30px;
 			font-weight: 500;
 			letter-spacing: 3px;
 			margin-top: 0;
@@ -188,6 +189,7 @@ p {
 				position: absolute;
 				top: 250px;
 				.photo-ico {
+					cursor: pointer;
 					display: block;
 					width: 70%;
 					font-size: 8px;
@@ -206,12 +208,12 @@ p {
 				.layer {
 					top: 17px;
 					background: rgba(0,0,0,0.8);
-					transition: top 1s ease-in;
+					transition: top 0.5s ease-in;
 				}
 				.photo-ico {
 					visibility: visible;
 					color: $color-main;
-					transition:  0.5s ease-in 1s;
+					transition:  0.4s ease-in 0.5s;
 				}
 			}
 		}
@@ -337,28 +339,27 @@ p {
 						border: none;
 						color: #fff;
 						transform: scale(1.2);
-						transition: transform 0.5s 0s;
-						
+						transition: transform 0.5s 0s;	
 					}
 				}
 				.fa-facebook {
 					&:hover {
-					background-color: $color-facebook;
+						background-color: $color-facebook;
 					}
 				}
 				.fa-twitter {
 					&:hover {
-					background-color: $color-twitter;
+						background-color: $color-twitter;
 					}
 				}
 				.fa-pinterest-p {
 					&:hover {
-					background-color: $color-pinterest;
+						background-color: $color-pinterest;
 					}
 				}
 				.fa-google-plus {
 					&:hover {
-					background-color: $color-google;
+						background-color: $color-google;
 					}
 				}
 			}
@@ -369,7 +370,7 @@ p {
 .logo {
 	padding: 20px;
 	.col {
-	padding: 20px;
+		padding: 20px;
 	}
 }
 .contact {
@@ -391,6 +392,9 @@ p {
 	input {
 		height: 50px;
 	}
+	textarea {
+		resize: none;
+	}
 	h1 {
 		color: #fff;
 	}
@@ -401,7 +405,7 @@ p {
 	line-height: 60px;
 	.col {
 		.row {
-		padding: 0 30px;
+			padding: 0 30px;
 		}
 	}
 	.fa {
@@ -422,23 +426,44 @@ p {
 	}
 	.fa-facebook {
 		&:hover {
-		background-color: $color-facebook;
+			background-color: $color-facebook;
 		}
 	}
 	.fa-twitter {
 		&:hover {
-		background-color: $color-twitter;
+			background-color: $color-twitter;
 		}
 	}
 	.fa-pinterest-p {
 		&:hover {
-		background-color: $color-pinterest;
+			background-color: $color-pinterest;
 		}
 	}
 	.fa-google-plus {
 		&:hover {
-		background-color: $color-google;
+			background-color: $color-google;
 		}
+	}
+}
+
+.modal {
+	.modal-body {
+		background: $color-main;
+		button {
+			color: $color-gray;
+			background: $color-dark;
+			width: 100px;
+			height: 35px;
+			line-height: 20px;
+			&:hover {
+				background: $color-gray;
+				color: $color-main;
+			}
+		}
+	}
+	.mod-photo {
+		height: 75vh;
+		background-size: cover;
 	}
 }
 
@@ -589,5 +614,10 @@ p {
 	}
 	.contact {
 		padding: 80px 0;
+	}
+	.modal {
+		.mod-photo {
+			height: 360px;
+		}
 	}
 }
